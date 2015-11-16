@@ -2,7 +2,7 @@
 title: Hackcon IV
 description: >
   Hackcon is the hackathon orgnaizers' conference.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/hackcon-iv" # the subpath of your site, e.g. /blog
 url: "http://hackcon.io" # the base hostname & protocol for your site
 twitter_username: mlhacks
 github_username:  mlh
