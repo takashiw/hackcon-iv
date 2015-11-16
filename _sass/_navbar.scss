@@ -1,0 +1,48 @@
+$nav-padding: 1rem;
+$nav-height: 3rem;
+
+nav {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height: $nav-height;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: $white;
+
+    .nav-logo {
+        height: ($nav-height - $nav-padding / 2 - 1rem);
+        position: absolute;
+        left: 0;
+        top: $nav-padding;
+        padding: 0.5rem 0;
+    }
+
+    .links {
+        position: absolute;
+        right: 0;
+        top: $nav-padding;
+
+        a {
+            @extend %h4;
+            display: inline-block;
+            height: ($nav-height - $nav-padding / 2);
+            line-height: ($nav-height - $nav-padding / 2);
+            vertical-align: baseline;
+        }
+
+        li {
+            display: inline-block;
+            float: left;
+            margin-left: 2rem;
+        }
+    }
+}
+
+@include media-query($phone-landscape) {
+    nav .nav-logo {
+        padding: 0.75rem 0;
+        height: 1rem;
+    }
+}

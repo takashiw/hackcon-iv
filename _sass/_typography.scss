@@ -1,0 +1,66 @@
+// Font weights
+$extra-bold: 800;
+$bold: 700;
+$regular: 400;
+$thin: 300;
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-weight: $bold;
+  src: url('../font/ProximaNova-Bold.otf') format('opentype');
+}
+
+// Fonts
+$body: 'Lato', 'Proxima Nova', Helvetica, Arial, sans-serif;
+$heading: 'Proxima Nova', 'Lato', Helvetica, Arial, sans-serif;
+
+h1, %h1 {
+  font-size: 3rem;
+  font-weight: $regular;
+  line-height: $base-line-height;
+  font-family: $heading;
+}
+
+h2, %h2 {
+  font-size: 2rem;
+  font-weight: $bold;
+  line-height: $base-line-height;
+  font-family: $heading;
+  margin-bottom: 1rem;
+}
+
+h3, %h3 {
+  font-size: 1.5rem;
+  font-weight: $bold;
+  line-height: $base-line-height;
+  font-family: $heading;
+}
+
+h4, %h4 {
+  font-size: 1rem;
+  font-family: $heading;
+  line-height: $base-line-height;
+  font-weight: $bold;
+  text-transform: uppercase;
+}
+
+h5, %h5 {
+  font-size: 0.7rem;
+  font-family: $heading;
+  line-height: 1;
+  font-weight: $bold;
+}
+
+h6, %h6 {
+  font-size: 0.7rem;
+  font-family: $body;
+  line-height: 1;
+  font-weight: $regular;
+}
+
+p, .p {
+  font-family: $body;
+  font-size: 1rem;
+  font-weight: $regular;
+  line-height: 2;
+}

@@ -1,0 +1,12 @@
+.content {
+    margin: 0 auto;
+    max-width: 60rem;
+    width: 90%;
+    position: relative;
+}
+
+@include media-query($phone-landscape) {
+    .no-mobile {
+        display: none !important;
+    }
+}

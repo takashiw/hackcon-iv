@@ -1,0 +1,71 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Our variables
+$base-font-size:   16px;
+$base-line-height: 1.5;
+
+$white: #FFFFFF;
+$ultra-light-gray: #F2F2F2;
+$light-gray: #A19D9D;
+$medium-gray: #858383;
+$gray: #464545;
+$black: #262729;
+$blue: #0389D5;
+$red: #BA493B;
+
+/**
+#262729
+#464545
+#737272
+#858383
+#a19d9d
+#bebebe
+#c1bdbd
+**/
+
+// Width of the content area
+$content-width:    60rem;
+
+// Media queries
+$phone-portrait:   480px;
+$phone-landscape:  640px;
+$tablet-portrait:  768px;
+$tablet-landscape: 1024px;
+$desktop:          1440px;
+$xl-desktop:       1920px;
+$xxl-desktop:      10000px;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "lib/reset.min",
+        "util",
+        "typography",
+        "base",
+        "layout",
+        "button",
+        "navbar",
+        "hero",
+        "about",
+        "image-grid",
+        "testimonials",
+        "sign-up",
+        "footer"
+;
