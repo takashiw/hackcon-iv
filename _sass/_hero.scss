@@ -1,13 +1,27 @@
 .hero {
     background-image: url('../img/hero.jpg');
     background-size: cover;
-    background-position: center center;
+    background-position: left center;
     color: $white;
     text-align: center;
     padding: 12rem 0;
 
-    .date {
+    .content {
+        max-width: 40rem;
+    }
+
+    .date, .location {
         font-weight: $bold;
+        width: 10rem;
+        display: inline-block;
+    }
+
+    .date {
+        text-align: right;
+    }
+
+    .location {
+        text-align: left;
     }
 
     .hero-logo {
@@ -15,8 +29,12 @@
         height: 2.5rem;
     }
 
-    .button {
-        margin-top: 3rem;
+    .details {
+        margin: 1.5rem 0;
+    }
+
+    .divider {
+        padding: 0 0.5rem;
     }
 }
 
