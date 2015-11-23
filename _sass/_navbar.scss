@@ -1,4 +1,4 @@
-$nav-padding: 1rem;
+$nav-padding: 0.5rem;
 $nav-height: 3rem;
 
 nav {
@@ -12,7 +12,7 @@ nav {
     color: $white;
 
     .nav-logo {
-        height: ($nav-height - $nav-padding / 2 - 1rem);
+        height: ($nav-height - $nav-padding / 2 - 0.25rem);
         position: absolute;
         left: 0;
         top: $nav-padding;
