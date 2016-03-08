@@ -42,8 +42,16 @@ nav {
 }
 
 @include media-query($phone-landscape) {
-    nav .nav-logo {
-        padding: 0.75rem 0;
-        height: 1rem;
+
+    nav {
+        .nav-logo {
+            padding: 0.75rem 0;
+        } 
+
+        .links a {
+            font-size: 0.875rem;
+        }
+
+
     }
 }
