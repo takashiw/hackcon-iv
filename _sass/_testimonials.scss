@@ -1,73 +1,73 @@
 $card-spacing: 0.5rem;
 
 .testimonials {
-    padding: 3rem 0 5rem;
+  padding: 3rem 0 5rem;
 
-    h2 {
-        color: $gray;
-        text-align: center;
-        margin-bottom: 2rem;
+  h2 {
+    color: $gray;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .cards {
+    @include clearfix;
+    margin-left: -$card-spacing;
+    margin-right: -$card-spacing;
+
+    li {
+      box-sizing: border-box;
+      width: 33.333333%;
+      padding: 0 $card-spacing;
+      display: inline-block;
+      float: left;
     }
 
-    .cards {
-        @include clearfix;
-        margin-left: -$card-spacing;
-        margin-right: -$card-spacing;
+  }
+  .card {
+    border: 1px solid $light-gray;
+    border-radius: 3px;
+    padding: (2 * $card-spacing);
+    min-height: 15rem;
 
-        li {
-            box-sizing: border-box;
-            width: 33.333333%;
-            padding: 0 $card-spacing;
-            display: inline-block;
-            float: left;
-        }
-
+    p {
+      color: $medium-gray;
     }
-    .card {
-        border: 1px solid $light-gray;
-        border-radius: 3px;
-        padding: (2 * $card-spacing);
-        min-height: 15rem;
 
-        p {
-            color: $medium-gray;
-        }
+    .person {
+      position: absolute;
+      bottom: -3rem;
+      height: 2rem;
 
-        .person {
-            position: absolute;
-            bottom: -3rem;
-            height: 2rem;
+      img {
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+      }
 
-            img {
-                height: 2rem;
-                width: 2rem;
-                border-radius: 50%;
-                position: absolute;
-                left: 0;
-            }
-
-            .text {
-                padding: 0.25rem 0 0.25rem 3rem;
-            }
-        }
+      .text {
+        padding: 0.25rem 0 0.25rem 3rem;
+      }
     }
+  }
 }
 
 @include media-query($phone-landscape) {
-    .testimonials {
-        .cards li {
-            width: 100%;
-            margin-bottom: 1rem;
-        }
-
-        .card {
-            min-height: auto;
-
-            .person {
-                position: relative;
-                bottom: auto;
-                margin-top: 1rem;
-            }
-        }
+  .testimonials {
+    .cards li {
+      width: 100%;
+      margin-bottom: 1rem;
     }
+
+    .card {
+      min-height: auto;
+
+      .person {
+        position: relative;
+        bottom: auto;
+        margin-top: 1rem;
+      }
+    }
+  }
 }

@@ -1,16 +1,16 @@
 .button {
-    @extend %h4;
-    background-color: $blue;
-    color: $white;
-    padding: 0 0.75rem;
-    line-height: 1;
-    border-radius: 3px;
-    cursor: pointer;
+  @extend %h4;
+  background-color: $blue;
+  color: $white;
+  padding: 0 0.75rem;
+  line-height: 1;
+  border-radius: 3px;
+  cursor: pointer;
 
-    &.large {
-        display: inline-block;
-        padding: 1rem;
-        width: 9rem;
-        max-width: 80%;
-    }
+  &.large {
+    display: inline-block;
+    padding: 1rem;
+    width: 11rem;
+    max-width: 80%;
+  }
 }

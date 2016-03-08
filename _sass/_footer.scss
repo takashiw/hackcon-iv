@@ -1,18 +1,18 @@
 footer {
-    @include border-box;
-    background-color: $black;
-    color: $white;
-    height: 3rem;
-    padding: 1rem 0;
+  @include border-box;
+  background-color: $black;
+  color: $white;
+  height: 3rem;
+  padding: 1rem 0;
 
-    .footer-logo {
-        height: 1rem;
-    }
+  .footer-logo {
+    height: 1rem;
+  }
 
-    .copyright {
-        line-height: 1rem;
-        vertical-align: middle;
-        float:  right;
-        display: inline-block;
-    }
+  .copyright {
+    line-height: 1rem;
+    vertical-align: middle;
+    float:  right;
+    display: inline-block;
+  }
 }
