@@ -43,6 +43,15 @@
     }
 }
 
+.hero.speak {
+    background-image: url('../img/hero_alt.jpg');
+    background-size: cover;
+    background-position: left center;
+    color: $white;
+    text-align: center;
+    padding: 19rem 0;
+}
+
 .logistics .hero {
   background-image: url('../img/hero-logistics.jpg');
 }
