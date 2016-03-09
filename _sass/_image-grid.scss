@@ -5,61 +5,61 @@ $num-images: 4;
 
 
 .image-grid {
-    .images {
-        @include clearfix;
-    }
-    li {
-        display: inline-block;
-        float: left;
-        width: 25%;
-    }
-    img {
-        width: 100%;
-        height: auto;
-    }
+  .images {
+    @include clearfix;
+  }
+  li {
+    display: inline-block;
+    float: left;
+    width: 25%;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @include media-query($tablet-landscape) {
-    .image-grid {
+  .image-grid {
+    height: $image-height;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    .images {
+      height: $image-height;
+      width: ($image-width * $num-images);
+
+      li {
         height: $image-height;
-        width: 100%;
-        overflow-x: scroll;
-        overflow-y: hidden;
 
-        .images {
-            height: $image-height;
-            width: ($image-width * $num-images);
-
-            li {
-                height: $image-height;
-
-                img {
-                    height: $image-height;
-                    width: auto;
-                }
-            }
+        img {
+          height: $image-height;
+          width: auto;
         }
+      }
     }
+  }
 }
 
 
 $image-mobile-height: 10rem;
 $image-mobile-width: ($image-mobile-height * $image-aspect-ratio);
 @include media-query($phone-landscape) {
-    .image-grid {
+  .image-grid {
+    height: $image-mobile-height;
+
+    .images {
+      height: $image-mobile-height;
+      width: ($image-mobile-width * $num-images);
+
+      li {
         height: $image-mobile-height;
 
-        .images {
-            height: $image-mobile-height;
-            width: ($image-mobile-width * $num-images);
-
-            li {
-                height: $image-mobile-height;
-
-                img {
-                    height: $image-mobile-height;
-                }
-            }
+        img {
+          height: $image-mobile-height;
         }
+      }
     }
+  }
 }
