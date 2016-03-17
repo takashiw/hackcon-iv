@@ -26,13 +26,14 @@
 
       h4 { margin-bottom: 10px; }
 
-      p { 
+      p {
         line-height: 1.75;
-        margin-bottom: 0; 
+        margin-bottom: 0;
       }
     }
 
     .faq:nth-of-type(odd) {
+      clear: left;
       padding: 10px 20px 10px 0;
     }
 
