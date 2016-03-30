@@ -10,4 +10,8 @@ $(document).ready(function() {
       'scrollTop': $target.offset().top
     }, 500);
   });
+
+  $('.register').click(function(e) {
+    fbq('track', 'Lead');
+  });
 });
