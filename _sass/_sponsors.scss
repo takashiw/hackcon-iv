@@ -12,33 +12,58 @@
       h4 {
         color: $gray;
         text-align: center;
+        margin-bottom: 1.2rem;
       }
 
       img {
         margin: auto;
         display: block;
-        padding: 1.5rem 0;
-        max-width: 40%;
+        padding-top: 1.5rem 0;
+        max-width: 36%;
       }
 
     }
 
+    .event-sponsors {
+      text-align: center;
+      margin-bottom: 1.2rem;
+      margin-top: 4.5rem;
+    }
+
     .items {
       overflow: hidden;
+      padding: 3rem;
 
       li {
         width: 50%;
         float: left;
         display: inline-block;
+        text-align: center;
 
         img {
           max-width: 80%;
         }
 
+        .brandmakers {
+          margin-top: 13px;
+        }
+
       }
-
-
 
     }
 
+}
+
+@include media-query($phone-landscape) {
+  .sponsors {
+    .items {
+      li {
+        width: 100%;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+    }
+
+  }
+  
 }
