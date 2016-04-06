@@ -1,0 +1,70 @@
+.sponsors {
+   padding: 3rem 0 5rem;
+
+    h2 {
+      color: $gray;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .event_section {
+      margin-top: 4rem;
+    }
+
+    .github_section {
+
+      h4 {
+        color: #A9A99D;
+        margin-bottom: 2.2rem;
+        text-align: center;
+        
+      }
+
+      img {
+        display: block;
+        margin: auto;
+        max-width: 36%;
+        padding-top: 1.5rem 0;
+        
+      }
+
+    }
+
+    .event_sponsors {
+      color: #A9A99D;
+      margin-bottom: 2.2rem;
+      text-align: center;
+    }
+
+    .items {
+      overflow: hidden;
+
+      li {
+        display: inline-block;
+        float: left;
+        text-align: center;
+        width: 50%;
+
+        img {
+          max-width: 80%;
+        }
+
+        .brandmakers {
+          margin-top: 13px;
+        }
+      }
+    }
+
+}
+
+@include media-query($phone-landscape) {
+  .sponsors {
+    .items {
+      li {
+        margin-bottom: 1rem;
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }  
+}
