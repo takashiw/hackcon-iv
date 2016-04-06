@@ -3,8 +3,8 @@
 
     h2 {
       color: $gray;
-      text-align: center;
       margin-bottom: 2rem;
+      text-align: center;
     }
 
     .event_section {
@@ -15,33 +15,35 @@
 
       h4 {
         color: #A9A99D;
-        text-align: center;
         margin-bottom: 2.2rem;
+        text-align: center;
+        
       }
 
       img {
-        margin: auto;
         display: block;
-        padding-top: 1.5rem 0;
+        margin: auto;
         max-width: 36%;
+        padding-top: 1.5rem 0;
+        
       }
 
     }
 
-    .event-sponsors {
-      text-align: center;
-      margin-bottom: 2.2rem;
+    .event_sponsors {
       color: #A9A99D;
+      margin-bottom: 2.2rem;
+      text-align: center;
     }
 
     .items {
       overflow: hidden;
 
       li {
-        width: 50%;
-        float: left;
         display: inline-block;
+        float: left;
         text-align: center;
+        width: 50%;
 
         img {
           max-width: 80%;
@@ -59,11 +61,10 @@
   .sponsors {
     .items {
       li {
-        width: 100%;
         margin-bottom: 1rem;
         text-align: center;
+        width: 100%;
       }
     }
-
   }  
 }
