@@ -26,6 +26,7 @@
 
   .hero-logo {
     margin-bottom: 1rem;
+    max-width: 65%;
 
   }
 
@@ -40,6 +41,21 @@
 
   .divider {
     padding: 0 0.5rem;
+  }
+
+  .select-region {
+    li {
+      display: inline;
+
+      .na-btn {
+        margin-right: 5px;
+        background: #C52E02;
+      }
+
+      .eu-btn {
+        margin-left: 5px;
+      }
+    }
   }
 }
 

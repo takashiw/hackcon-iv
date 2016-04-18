@@ -55,6 +55,13 @@
       }
     }
 
+    &.special-events{
+      .event_section {
+        margin-top: 2rem;
+      }
+    }
+
+
 }
 
 @include media-query($phone-landscape) {

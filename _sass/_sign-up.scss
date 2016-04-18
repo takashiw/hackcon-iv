@@ -4,17 +4,18 @@
   background-size: cover;
   background-position: center center;
 
+  form {
+    @extend .content;
+    max-width: 25rem;
+  }
+
   h2 {
     color: $white;
     text-align: center;
     margin-bottom: 1.5rem;
   }
 
-  form {
-    @extend .content;
-    max-width: 25rem;
-  }
-
+  
   input[type="email"] {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -39,6 +40,21 @@
     padding-right: 1.5rem;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+  }
+
+    .select-region {
+    li {
+      display: inline;
+
+      .na-btn {
+        margin-right: 5px;
+        background: #C52E02;
+      }
+
+      .eu-btn {
+        margin-left: 5px;
+      }
+    }
   }
 }
 

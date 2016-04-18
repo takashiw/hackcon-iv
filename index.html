@@ -4,11 +4,14 @@ layout: default
 {% include navbar.html %}
 <section class="hero" id="top">
     <div class="content">
-        <img class="hero-logo" src="{{ '/img/h4_logo.png' | prepend: site.baseurl }}">
+        <img class="hero-logo" src="{{ '/img/global_logo_hackcon.svg' | prepend: site.baseurl }}">
         <br /><a href="http://education.github.com" target="_blank"><img class="hero-hosted" src="{{ '/img/hosted-github.png' | prepend: site.baseurl }}"></a><br />
         <h1>Welcome to the hackathon organizer community.</h1>
-        <p class="details"><span class="date" style="width:auto;">June 24 &mdash; 26 </span> <span class="divider">|</span> <span class="location">Estes Park, Colorado </span></p>
-        <a class="button large register" href="https://ti.to/mlh/hackcon-iv">Register</a>
+        <p class="details">Join us at an upcoming conference. Select your region below!</p>
+        <ul class="select-region">
+          <li><a class="button large na-btn" href="/na">North America</a></li>
+          <li><a class="button large eu-btn" href="/eu">Europe</a></li>
+        </ul>
     </div>
 </section>
 <section class="about" id="info">
@@ -18,12 +21,17 @@ layout: default
         <br />
         <p>Join us in Estes Park, Colorado for two days of teaching, learning, and community building on a beautiful campground. We'll see you in the mountains!</p>
         <br />
-        <p><a class="button large register" href="/logistics">View Details</a></p>
     </div>
 </section>
-<section class="boulder">
-
+<section class="image-grid">
+    <ul class="images">
+        <li><img src="{{ '/img/picture1.jpg' | prepend: site.baseurl }}"></li>
+        <li><img src="{{ '/img/picture2.jpg' | prepend: site.baseurl }}"></li>
+        <li><img src="{{ '/img/picture3.jpg' | prepend: site.baseurl }}"></li>
+        <li><img src="{{ '/img/picture4.jpg' | prepend: site.baseurl }}"></li>
+    </ul>
 </section>
+
 <section class="about location">
     <div class="content">
         <h2>What will I learn at Hackcon?</h2>
@@ -38,14 +46,7 @@ layout: default
         <a class="button large" href="https://www.youtube.com/playlist?list=PLPDgudJ_VDUdqhQldG7SqXGxaj-FiLGmP">Hackcon I</a> <a class="button large" href="https://www.youtube.com/playlist?list=PLPDgudJ_VDUfQcMWbEgEsJS270FvfNGFG">Hackcon II</a> <a class="button large" href="https://www.youtube.com/playlist?list=PLPDgudJ_VDUfW7HyctqGMKmhLHAwAZLIS">Hackcon III</a> <a class="button large" href="https://www.youtube.com/playlist?list=PLPDgudJ_VDUeTUV4ytl4WC4RTFZsZxJVB">Hackcon EU</a></p><br />
     </div>
 </section>
-<section class="image-grid">
-    <ul class="images">
-        <li><img src="{{ '/img/picture1.jpg' | prepend: site.baseurl }}"></li>
-        <li><img src="{{ '/img/picture2.jpg' | prepend: site.baseurl }}"></li>
-        <li><img src="{{ '/img/picture3.jpg' | prepend: site.baseurl }}"></li>
-        <li><img src="{{ '/img/picture4.jpg' | prepend: site.baseurl }}"></li>
-    </ul>
-</section>
+
 <section class="testimonials">
     <div class="content">
         <h2>Organizers Love Hackcon</h2>
@@ -92,30 +93,27 @@ layout: default
 <section class="about sign-up" id="sign-up">
     <h2>Reserve your spot today!</h2>
     <div class="content">
-        <a class="button large register" href="https://ti.to/mlh/hackcon-iv">Register</a>
+        <ul class="select-region">
+          <li><a class="button large na-btn" href="/na">North America</a></li>
+          <li><a class="button large eu-btn" href="/eu">Europe</a></li>
+        </ul>
     </div>
 </section>
 <section class="sponsors">
     <div class="content">
-      <h2>Special Thanks to Our Sponsors</h2>
+      <h2>Special Thanks to Our Global Sponsor</h2>
       
       <div class="github_section">
           <h4>Presenting Partner</h4>
           <a href="http://github.com"><img src="{{ '/img/github.svg' | prepend: site.baseurl }}"></a>
       </div>
 
-      <div class="event_section">
-        <h4 class="event_sponsors">Event Sponsors</h4>
-        <ul class="items">
-            <li><a href="http://kpcb.com"><img class="kpcb" src="{{ '/img/kpcb.svg' | prepend: site.baseurl }}"></a></li>
-            <li><a href="http://brandmakers.com/"><img class="brandmakers" src="{{ '/img/brandmakers.svg' | prepend: site.baseurl }}"></a></li>
-        </ul>
-      </div> 
+
     </div>
 </section>
 <footer>
     <div class="content">
-        <img class="footer-logo" src="{{ '/img/header_logo.png' | prepend: site.baseurl }}">
+        <img class="footer-logo" src="{{ '/img/mlh_hackcon.svg' | prepend: site.baseurl }}">
         <h5 class="copyright">&copy; Major League Hacking 2016</h5>
     </div>
 </footer>

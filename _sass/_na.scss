@@ -41,6 +41,21 @@
       padding: 10px 0px 10px 20px;
     }
 
+    .select-region {
+      li {
+        display: inline;
+
+        .na-btn {
+          margin-right: 5px;
+          background: #C52E02;
+        }
+
+        .eu-btn {
+          margin-left: 5px;
+        }
+      }
+    }
+
     @include media-query($phone-landscape) {
       .content {
         text-align: center;

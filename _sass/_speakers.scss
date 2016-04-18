@@ -1,0 +1,59 @@
+.speakers {
+
+  padding: 4rem 0;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .people {
+    overflow: hidden;
+
+    li {
+      display: inline-block;
+      float: left;
+      width: 33.333333%
+    }
+
+    .item {
+      text-align: center;
+
+      .profile_pic {
+        background: url('../img/speaker_avi.jpg') center center no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        display: block;
+        height: 128px;
+        margin: auto;
+        margin-bottom: 20px;
+        width: 128px;
+      }
+
+      h4 {
+        font-size: 20px;
+      }
+
+      h5 {
+        color: #AFAFAF;
+        font-size: 18px;
+        font-weight: 300;
+
+      }
+
+      h6 {
+        color: #487FE8;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@include media-query($phone-landscape) {
+  .speakers {
+    .people li {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+}
