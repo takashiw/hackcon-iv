@@ -14,4 +14,5 @@ $(document).ready(function() {
   $('.register').click(function(e) {
     fbq('track', 'Lead');
   });
+
 });

@@ -1,4 +1,4 @@
-$nav-padding: 0.5rem;
+$nav-padding: 1rem;
 $nav-height: 3rem;
 
 nav {
@@ -10,14 +10,13 @@ nav {
   left: 0;
   right: 0;
   color: $white;
-  padding-top: 20px;
 
   .nav-logo {
-    height: ($nav-height - $nav-padding / 2 - 0.25rem);
+    height: 1.5rem;
     position: absolute;
-    left: 0;
-    top: $nav-padding;
-    padding: 0.5rem 0;
+    left: 1.5rem;
+    top: 1.5rem;
+    padding: 0;
   }
 
   .links {
@@ -28,8 +27,8 @@ nav {
     a {
       @extend %h4;
       display: inline-block;
-      height: ($nav-height - $nav-padding / 2);
-      line-height: ($nav-height - $nav-padding / 2);
+      height: 1.5rem;
+      line-height: 1.5rem;
       vertical-align: baseline;
     }
 
@@ -39,19 +38,85 @@ nav {
       margin-left: 2rem;
     }
   }
+
+  .mobile-navigation, .mobile-nav-trigger, label[for="mobile-nav-trigger"] {
+    display: none;
+  }
+
 }
 
-@include media-query($phone-landscape) {
+
+@include media-query($tablet-portrait) {
 
   nav {
-    .nav-logo {
-      padding: 0.75rem 0;
-    } 
+    background: #353535;
+    display: block !important;
+    height: 4.5rem;
+    z-index: 0;
+
+    .content {
+      width: 100%;
+    }
 
     .links a {
       font-size: 0.875rem;
     }
 
+    .mobile-nav-trigger {
+      clip: rect(0, 0, 0, 0);
+      display: block !important;
+      position: absolute;
+    }
+
+    label[for="mobile-nav-trigger"] {
+      cursor: pointer;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect fill='#ffffff' width='30' height='5'/><rect fill='#ffffff' y='24' width='30' height='5'/><rect fill='#ffffff' y='12' width='30' height='5'/></svg>");
+      background-size: contain;
+      display: block !important;
+      right: 1.5rem;
+      height: 1.5rem;
+      position: absolute;
+      top: 1.5rem;
+      z-index: 2;
+      width: 1.5rem;
+    }
+
+    .links {
+      display: none !important;
+      clear: both;
+      left: 0;
+      position: relative;
+      top: 4.5rem;
+    }
+
+    .mobile-nav-trigger:checked ~ ul {
+      display: block !important;
+    }
+
+    .links li {
+      background: #000000;
+      display: block;
+      float: none;
+      height: 4rem;
+      line-height: 4rem;
+      margin-left: 0;
+
+      &:hover {
+        background: red;
+      }
+
+      a, a:hover {
+        color: $medium-gray;
+        border-bottom: none;
+        display: block;
+        font-weight: 600;
+        padding-left: 1rem;
+      }
+
+      &.selected a, a:hover {
+        color: red;
+      }
+    }
 
   }
 }
