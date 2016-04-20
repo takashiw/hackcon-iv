@@ -51,9 +51,12 @@
 
 @include media-query($phone-landscape) {
   .speakers {
+    h2 {
+      margin-bottom: 2rem;
+    }
     .people li {
       width: 100%;
-      margin-bottom: 2rem;
+      margin-bottom: 4rem;
     }
   }
 }

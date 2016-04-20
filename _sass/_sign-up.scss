@@ -61,5 +61,24 @@
 @include media-query($phone-landscape) {
   .sign-up {
     background-position: top left;
+
+    h2 {
+      padding: 0.5rem;
+      font-size: 1.5rem;
+    }
+
+    .select-region {
+      li {
+        .na-btn {
+          margin-right: 0px;
+          margin-bottom: 1rem;
+        }
+        .eu-btn {
+          margin-left: 0px;
+        }
+
+      }
+      
+    }
   }
 }

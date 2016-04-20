@@ -6,6 +6,13 @@
   text-align: center;
   padding: 12rem 0;
 
+  &.na {
+    .button.large.register {
+      background: #C52E02;
+    }
+    
+  }
+
   .content {
     max-width: 40rem;
   }
@@ -70,4 +77,32 @@
 
 .logistics .hero {
   background-image: url('../img/hero-logistics.jpg');
+}
+
+@include media-query($phone-landscape) {
+  .hero {
+    padding: 12rem 0 8rem;
+
+    &.speak {
+      padding: 12rem 0 8rem;
+    }
+
+    .date {
+      width: auto;
+    }
+
+    .select-region {
+      li {
+        .na-btn {
+          margin-right: 0px;
+          margin-bottom: 1rem;
+        }
+        .eu-btn {
+          margin-left: 0px;
+        }
+
+      }
+      
+    }
+  }
 }
