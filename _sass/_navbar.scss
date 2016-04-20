@@ -1,43 +1,49 @@
-$nav-padding: 1rem;
-$nav-height: 3rem;
+$nav-line-height: 1.5rem;
+$nav-height: ($nav-line-height * 3);
 
 nav {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  height: $nav-height;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   color: $white;
+  height: $nav-height;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 
   .nav-logo {
-    height: 1.5rem;
-    position: absolute;
-    left: 1.5rem;
-    top: 1.5rem;
+    float: left;
+    height: $nav-line-height;
+    margin-bottom: $nav-line-height;
+    margin-left: $nav-line-height;
+    margin-top: $nav-line-height;
     padding: 0;
   }
 
   .links {
-    position: absolute;
-    right: 0;
-    top: $nav-padding;
+    float: right;
+    margin: $nav-line-height;
 
     a {
       @extend %h4;
+
       display: inline-block;
-      height: 1.5rem;
-      line-height: 1.5rem;
+      height: $nav-line-height;
+      line-height: $nav-line-height;
       vertical-align: baseline;
     }
+
+    a:hover {
+      border-bottom: 2px solid $red;
+    }
+
 
     li {
       display: inline-block;
       float: left;
-      margin-left: 2rem;
+      line-height: $nav-line-height;
+      margin-left: $nav-line-height * 2;
     }
   }
+
 
   .mobile-navigation, .mobile-nav-trigger, label[for="mobile-nav-trigger"] {
     display: none;
@@ -49,17 +55,15 @@ nav {
 @include media-query($tablet-portrait) {
 
   nav {
-    background: #353535;
+    background: $dark-gray;
     display: block !important;
     height: 4.5rem;
     z-index: 1;
+    height: $nav-height;
+
 
     .content {
       width: 100%;
-    }
-
-    .links a {
-      font-size: 0.875rem;
     }
 
     .mobile-nav-trigger {
@@ -73,20 +77,19 @@ nav {
       background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect fill='#ffffff' width='30' height='5'/><rect fill='#ffffff' y='24' width='30' height='5'/><rect fill='#ffffff' y='12' width='30' height='5'/></svg>");
       background-size: contain;
       display: block !important;
-      right: 1.5rem;
       height: 1.5rem;
       position: absolute;
+      right: 1.5rem;
       top: 1.5rem;
-      z-index: 2;
       width: 1.5rem;
+      z-index: 2;
     }
 
     .links {
-      display: none !important;
       clear: both;
-      left: 0;
-      position: relative;
-      top: 4.5rem;
+      display: none !important;
+      float: none;
+      margin: 0;
     }
 
     .mobile-nav-trigger:checked ~ ul {
@@ -97,16 +100,16 @@ nav {
       background: #000000;
       display: block;
       float: none;
-      height: 4rem;
-      line-height: 4rem;
-      margin-left: 0;
+      line-height: $nav-line-height;
+      margin: 0;
+      padding: $nav-line-height;
 
       &:hover {
-        background: red;
+        background: $dark-gray;
       }
 
       a, a:hover {
-        color: $medium-gray;
+        color: $white;
         border-bottom: none;
         display: block;
         font-weight: 600;
@@ -116,7 +119,8 @@ nav {
       }
 
       &.selected a, a:hover {
-        color: red;
+        color: white;
+        border-bottom: none;
       }
     }
 

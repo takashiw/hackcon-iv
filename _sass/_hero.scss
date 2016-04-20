@@ -6,6 +6,14 @@
   text-align: center;
   padding: 12rem 0;
 
+  &.eu {
+    background-image: url('../img/hero-eindhoven.jpg') !important;
+    .button.large.register {
+      background: #C52E02;
+    }
+    
+  }
+
   &.na {
     .button.large.register {
       background: #C52E02;
@@ -13,13 +21,14 @@
     
   }
 
+
   .content {
     max-width: 40rem;
   }
 
   .date, .location {
     font-weight: $bold;
-    width: 10rem;
+    width: auto;
     display: inline-block;
   }
 
