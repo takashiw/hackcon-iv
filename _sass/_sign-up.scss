@@ -43,6 +43,7 @@
   }
 
     .select-region {
+
     li {
       display: inline;
 
@@ -59,6 +60,7 @@
 }
 
 @include media-query($phone-landscape) {
+
   .sign-up {
     background-position: top left;
 
@@ -70,11 +72,11 @@
     .select-region {
       li {
         .na-btn {
-          margin-right: 0px;
+          margin-right: 0;
           margin-bottom: 1rem;
         }
         .eu-btn {
-          margin-left: 0px;
+          margin-left: 0;
         }
 
       }

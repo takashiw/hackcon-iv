@@ -44,7 +44,6 @@ nav {
     }
   }
 
-
   .mobile-navigation, .mobile-nav-trigger, label[for="mobile-nav-trigger"] {
     display: none;
   }
@@ -77,11 +76,11 @@ nav {
       background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect fill='#ffffff' width='30' height='5'/><rect fill='#ffffff' y='24' width='30' height='5'/><rect fill='#ffffff' y='12' width='30' height='5'/></svg>");
       background-size: contain;
       display: block !important;
-      height: 1.5rem;
+      height: $nav-line-height;
       position: absolute;
-      right: 1.5rem;
-      top: 1.5rem;
-      width: 1.5rem;
+      right: $nav-line-height;
+      top: $nav-line-height;
+      width: $nav-line-height;
       z-index: 2;
     }
 
@@ -129,6 +128,6 @@ nav {
 
 @media screen and (min-width: 769px) {
   nav .links {
-    top: 1.5rem;
+    top: $nav-line-height;
   }
 }

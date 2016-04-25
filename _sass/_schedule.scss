@@ -3,23 +3,23 @@
   padding: 4rem 0;
 
   h2 {
-    text-align: center;
     color: #fff;
+    text-align: center;  
   }
 
   .timeline_wrap {
-    overflow: hidden;
     margin-top: 2rem;
-
+    overflow: hidden;
+    
     .day {
       float: left;
-      width: 33.333333%;
       padding: 1.5rem;
+      width: 33.333333%;
 
       h3 {
+        background: #dc3333;
         color: #fff;
         margin-bottom: 1.5rem;
-        background: #dc3333;
         padding: 1.2rem;
       }
 
@@ -29,13 +29,13 @@
     }
 
     .time_block {
-      float: right;
       color: #DEDE80;
+      float: right; 
     }
 
     .block_title {
-      font-size: 1.5rem;
       color: #fff;
+      font-size: 1.5rem;
     }
 
     .block_description {

@@ -8,6 +8,7 @@
 
   &.eu {
     background-image: url('../img/hero-eindhoven.jpg') !important;
+
     .button.large.register {
       background: #C52E02;
     }
@@ -27,9 +28,9 @@
   }
 
   .date, .location {
-    font-weight: $bold;
-    width: auto;
     display: inline-block;
+    font-weight: $bold;
+    width: auto; 
   }
 
   .date {
@@ -47,8 +48,8 @@
   }
 
   .hero-hosted {
-    margin-bottom: 1rem;
     height: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   .details {
@@ -64,12 +65,12 @@
       display: inline;
 
       .na-btn {
-        margin-right: 5px;
         background: #C52E02;
+        margin-right: 0.5rem;
       }
 
       .eu-btn {
-        margin-left: 5px;
+        margin-left: 0.5rem;
       }
     }
   }
@@ -89,6 +90,7 @@
 }
 
 @include media-query($phone-landscape) {
+
   .hero {
     padding: 12rem 0 8rem;
 
@@ -101,11 +103,14 @@
     }
 
     .select-region {
+
       li {
+        
         .na-btn {
           margin-right: 0px;
           margin-bottom: 1rem;
         }
+
         .eu-btn {
           margin-left: 0px;
         }

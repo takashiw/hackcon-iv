@@ -4,11 +4,14 @@
 
     .content {
       h2 {
-        text-align: center;
         margin-bottom: 25px;
+        text-align: center;
+        
       }
 
-      p { margin-bottom: 15px; }
+      p { 
+        margin-bottom: 15px; 
+      }
 
       a {
         color: #0389D5;
@@ -20,11 +23,15 @@
       }
     }
 
-    .faq { margin-bottom: 20px; }
+    .faq { 
+      margin-bottom: 20px; 
+    }
 
     .faq .wrap {
 
-      h4 { margin-bottom: 10px; }
+      h4 { 
+        margin-bottom: 10px; 
+      }
 
       p {
         line-height: 1.75;
@@ -46,12 +53,12 @@
         display: inline;
 
         .na-btn {
-          margin-right: 5px;
           background: #C52E02;
+          margin-right: 0.5rem;
         }
 
         .eu-btn {
-          margin-left: 5px;
+          margin-left: 0.5rem;
         }
       }
     }
