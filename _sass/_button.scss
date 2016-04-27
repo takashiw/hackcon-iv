@@ -14,3 +14,40 @@
     max-width: 80%;
   }
 }
+
+.select-region {
+  li {
+    display: inline;
+
+    .na-btn {
+      background: #C52E02;
+      margin-right: 0.5rem;
+    }
+
+    .eu-btn {
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+
+
+@include media-query($phone-landscape) {
+
+  .select-region {
+
+    li {
+
+      .na-btn {
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
+
+      .eu-btn {
+        margin-left: 0;
+      }
+
+    }
+
+  }
+}

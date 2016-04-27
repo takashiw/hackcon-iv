@@ -7,7 +7,7 @@
   padding: 12rem 0;
 
   &.eu {
-    background-image: url('../img/hero-eindhoven.jpg') !important;
+    background-image: url('../img/hero-eindhoven.jpg');
 
     .button.large.register {
       background: #C52E02;
@@ -16,6 +16,8 @@
   }
 
   &.na {
+    background-image: url('../img/hero-logistics.jpg');
+
     .button.large.register {
       background: #C52E02;
     }
@@ -60,20 +62,7 @@
     padding: 0 0.5rem;
   }
 
-  .select-region {
-    li {
-      display: inline;
-
-      .na-btn {
-        background: #C52E02;
-        margin-right: 0.5rem;
-      }
-
-      .eu-btn {
-        margin-left: 0.5rem;
-      }
-    }
-  }
+  
 }
 
 .hero.speak {
@@ -85,9 +74,7 @@
   padding: 19rem 0;
 }
 
-.logistics .hero {
-  background-image: url('../img/hero-logistics.jpg');
-}
+
 
 @include media-query($phone-landscape) {
 
@@ -102,21 +89,5 @@
       width: auto;
     }
 
-    .select-region {
-
-      li {
-        
-        .na-btn {
-          margin-right: 0px;
-          margin-bottom: 1rem;
-        }
-
-        .eu-btn {
-          margin-left: 0px;
-        }
-
-      }
-      
-    }
   }
 }
