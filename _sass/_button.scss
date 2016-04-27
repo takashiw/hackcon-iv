@@ -30,6 +30,10 @@
   }
 }
 
+.close {
+  background: $medium-gray;
+}
+
 
 
 @include media-query($phone-landscape) {
