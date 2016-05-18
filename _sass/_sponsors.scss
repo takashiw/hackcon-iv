@@ -1,5 +1,5 @@
 .sponsors {
-   padding: 3rem 0 5rem;
+   padding: 6rem 0 5rem;
 
     h2 {
       color: $gray;
@@ -36,8 +36,33 @@
       text-align: center;
     }
 
-    .items {
+    .items-1 {
       overflow: hidden;
+      margin-bottom: 3.5rem;
+
+      li {
+        text-align: center;
+
+        img {
+          max-width: 80%;
+        }
+
+        .potbelly {
+          max-width: 40%;
+        }
+
+        .hightech {
+          max-width: 60%;
+        }
+
+      }
+    }
+
+
+
+    .items-2 {
+      overflow: hidden;
+      margin-bottom: 3.5rem;
 
       li {
         display: inline-block;
@@ -55,6 +80,27 @@
       }
     }
 
+    .items-3 {
+      overflow: hidden;
+      margin-bottom: 3.5rem;
+
+      li {
+        display: inline-block;
+        float: left;
+        text-align: center;
+        width: 33.333%;
+
+        img {
+          max-width: 80%;
+        }
+
+        .microsoft, .devpost {
+          margin-top: 3rem;
+        }
+
+      }
+    }
+
     &.special-events{
       .event_section {
         margin-top: 2rem;
@@ -66,11 +112,32 @@
 
 @include media-query($phone-landscape) {
   .sponsors {
-    .items {
+    .items-2 {
+      margin-bottom: 0;
+
       li {
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
         text-align: center;
         width: 100%;
+      }
+    }
+
+    .items-3 {
+      margin-bottom: 0;
+
+      li {
+        margin-bottom: 1.5rem;
+        text-align: center;
+        width: 100%;
+      }
+    }
+
+    .items-1 {
+
+      li {
+        .potbelly {
+          max-width: 60%;
+        }
       }
     }
   }  
