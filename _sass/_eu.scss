@@ -1,0 +1,19 @@
+.hero {
+  &.eu {
+    background-image: url('../img/hero/hero-eu.jpg');
+
+    .button.large.register {
+      background: #C52E02;
+    }
+  }
+}
+
+.eu-landing {
+  .speakers{
+    display: none;
+  }
+
+  .schedule {
+    display: none;
+  }
+}

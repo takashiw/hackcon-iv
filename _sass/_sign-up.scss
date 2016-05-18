@@ -11,11 +11,10 @@
 
   h2 {
     color: $white;
-    text-align: center;
     margin-bottom: 1.5rem;
+    text-align: center;
   }
 
-  
   input[type="email"] {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -30,22 +29,20 @@
 
   input[type="submit"] {
     @extend .button;
-    top: 1px;
-    bottom: 1px;
     border: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    bottom: 1px;
+    outline: 0;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    outline: 0;
     position: absolute;
     right: 1px;
+    top: 1px;
   }
-
 }
 
 @include media-query($phone-landscape) {
-
   .sign-up {
     background-position: top left;
 
@@ -53,7 +50,5 @@
       font-size: 1.5rem;
       padding: 0.5rem;
     }
-
-
   }
 }

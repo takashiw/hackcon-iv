@@ -1,0 +1,10 @@
+.hero.speak {
+  background-image: url('../img/hero/hero-speak.jpg');
+  padding: 19rem 0;
+}
+
+@include media-query($phone-landscape) {
+  .hero.speak {
+    padding: 12rem 0 8rem;
+  }
+}

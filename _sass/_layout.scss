@@ -9,7 +9,6 @@
   display: none !important;
 }
 
-
 @include media-query($phone-landscape) {
   .no-mobile {
     display: none !important;

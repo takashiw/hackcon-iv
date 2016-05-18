@@ -3,28 +3,29 @@ $image-aspect-ratio: 1.285714286;
 $image-width: ($image-height * $image-aspect-ratio);
 $num-images: 4;
 
-
 .image-grid {
   .images {
     @include clearfix;
   }
+
   li {
     display: inline-block;
     float: left;
     width: 25%;
   }
+
   img {
-    width: 100%;
     height: auto;
+    width: 100%;
   }
 }
 
 @include media-query($tablet-landscape) {
   .image-grid {
     height: $image-height;
-    width: 100%;
     overflow-x: scroll;
     overflow-y: hidden;
+    width: 100%;
 
     .images {
       height: $image-height;
@@ -42,9 +43,9 @@ $num-images: 4;
   }
 }
 
-
 $image-mobile-height: 10rem;
 $image-mobile-width: ($image-mobile-height * $image-aspect-ratio);
+
 @include media-query($phone-landscape) {
   .image-grid {
     height: $image-mobile-height;

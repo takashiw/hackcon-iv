@@ -1,0 +1,11 @@
+<section class="about sign-up" id="sign-up">
+  <h2>{{ include.cta }}</h2>
+
+  <div class="content">
+    <ul class="button-list">
+      {% for button in include.buttons %}
+      <li><a class="button large {{ button.class }}" href="{{ button.link }}">{{ button.text }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

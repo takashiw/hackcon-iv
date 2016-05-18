@@ -47,19 +47,14 @@ nav {
   .mobile-navigation, .mobile-nav-trigger, label[for="mobile-nav-trigger"] {
     display: none;
   }
-
 }
 
-
 @include media-query($tablet-portrait) {
-
   nav {
     background: $dark-gray;
     display: block !important;
-    height: 4.5rem;
-    z-index: 1;
     height: $nav-height;
-
+    z-index: 1;
 
     .content {
       width: 100%;
@@ -118,11 +113,10 @@ nav {
       }
 
       &.selected a, a:hover {
-        color: white;
         border-bottom: none;
+        color: white;
       }
     }
-
   }
 }
 

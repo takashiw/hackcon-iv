@@ -1,29 +1,10 @@
 .hero {
-  background-image: url('../img/hero.jpg');
+  background-image: url('../img/hero/hero-default.jpg');
   background-size: cover;
   background-position: left center;
   color: $white;
-  text-align: center;
   padding: 12rem 0;
-
-  &.eu {
-    background-image: url('../img/hero-eindhoven.jpg');
-
-    .button.large.register {
-      background: #C52E02;
-    }
-    
-  }
-
-  &.na {
-    background-image: url('../img/hero-logistics.jpg');
-
-    .button.large.register {
-      background: #C52E02;
-    }
-    
-  }
-
+  text-align: center;
 
   .content {
     max-width: 40rem;
@@ -46,7 +27,6 @@
   .hero-logo {
     margin-bottom: 1rem;
     max-width: 65%;
-
   }
 
   .hero-hosted {
@@ -61,33 +41,14 @@
   .divider {
     padding: 0 0.5rem;
   }
-
-  
 }
-
-.hero.speak {
-  background-image: url('../img/hero_alt.jpg');
-  background-size: cover;
-  background-position: left center;
-  color: $white;
-  text-align: center;
-  padding: 19rem 0;
-}
-
-
 
 @include media-query($phone-landscape) {
-
   .hero {
     padding: 12rem 0 8rem;
-
-    &.speak {
-      padding: 12rem 0 8rem;
-    }
 
     .date {
       width: auto;
     }
-
   }
 }

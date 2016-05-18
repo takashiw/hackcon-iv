@@ -1,16 +1,23 @@
 ---
 layout: default
 custom_class: na-landing
+hero_buttons:
+ - text: "Register"
+   class: "register"
+   link: "https://ti.to/mlh/hackcon-iv"
 ---
 {% include navbar.html %}
-<section class="hero na" id="top">
-    <div class="content">
-        <img class="hero-logo" src="{{ '/img/h4_logo.png' | prepend: site.baseurl }}">
-        <h1>Joining us at Hackcon? Here's your survival guide!</h1>
-        <p class="details"><span class="date">June 24 &mdash; 26 </span> <span class="divider">|</span> <span class="location">Estes Park, Colorado </span></p>
-        <a class="button large register" href="https://ti.to/mlh/hackcon-iv">Register</a>
-    </div>
-</section>
+
+{% include hero.html
+  class="na"
+  logo="/img/logos/mlh-hackcon4-logo.png"
+  sponsor_logo="/img/sponsors/hosted-github.png"
+  sponsor_url="http://education.github.com"
+  cta="Joining us at Hackcon? Here's your survival guide!"
+  details="<span class='date'>June 24 &mdash; 26 </span> <span class='divider'>|</span> <span class='location'>Estes Park, Colorado </span>"
+  buttons=page.hero_buttons
+%}
+
 <section class="about-logistics">
   <div class="content">
     <div class="grid">
@@ -179,6 +186,7 @@ custom_class: na-landing
     </div>
   </div>
 </section>
+
 <section class="sponsors special-events">
     <div class="content">
       <h2>Special Thanks to Our Sponsors</h2>
@@ -201,15 +209,7 @@ custom_class: na-landing
     </div>
 </section>
 
-<section class="about sign-up" id="sign-up">
-    <h2>Reserve your spot today!</h2>
-    <div class="content">
-        <ul class="select-region">
-          <li><a class="button large na-btn" href="/na">North America</a></li>
-          <li><a class="button large eu-btn" href="/eu">Europe</a></li>
-        </ul>
-    </div>
-</section>
+{% include cta_reminder_section.html cta="Reserve your spot today!" buttons=page.hero_buttons %}
 
 <section class="about-logistics faqs">
     <div class="content">
@@ -319,11 +319,8 @@ custom_class: na-landing
     </div>
   </div>
 </section>
-<footer>
-    <div class="content">
-        <img class="footer-logo" src="{{ '/img/mlh_hackcon.svg' | prepend: site.baseurl }}">
-        <h5 class="copyright">&copy Major League Hacking 2016</h5>
-    </div>
-</footer>
+
+{% include footer.html %}
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript" src="{{ '/js/script.js' | prepend: site.baseurl }}"></script>

@@ -10,9 +10,9 @@ footer {
   }
 
   .copyright {
+    display: inline-block;
+    float:  right;
     line-height: 1rem;
     vertical-align: middle;
-    float:  right;
-    display: inline-block;
   }
 }

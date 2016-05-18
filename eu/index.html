@@ -1,16 +1,21 @@
 ---
 layout: default
 custom_class: eu-landing
+hero_buttons:
+ - text: "Register"
+   class: "register"
+   link: "https://ti.to/mlh/mlh-hackcon-eu-2016"
 ---
 {% include navbar.html %}
-<section class="hero eu" id="top">
-    <div class="content">
-        <img class="hero-logo" src="{{ '/img/eu_logo.png' | prepend: site.baseurl }}">
-        <h1>Joining us at Hackcon EU? Here's your survival guide!</h1>
-        <p class="details"><span class="date">September 2 &mdash; 4 </span> <span class="divider">|</span> <span class="location">Eindoven, Netherlands </span></p>
-        <a class="button large register" href="https://ti.to/mlh/mlh-hackcon-eu-2016">Register</a>
-    </div>
-</section>
+
+{% include hero.html
+  class="eu"
+  logo="/img/logos/mlh-hackcon-eu-logo.png"
+  cta="Joining us at Hackcon EU? Here's your survival guide!"
+  details="<span class='date'>September 2 &mdash; 4</span> <span class='divider'>|</span> <span class='location'>Eindoven, Netherlands </span>"
+  buttons=page.hero_buttons
+%}
+
 <section class="about-logistics">
   <div class="content">
     <div class="grid">
@@ -192,15 +197,7 @@ custom_class: eu-landing
     </div>
 </section>
 
-<section class="about sign-up" id="sign-up">
-    <h2>Reserve your spot today!</h2>
-    <div class="content">
-        <ul class="select-region">
-          <li><a class="button large na-btn" href="/na">North America</a></li>
-          <li><a class="button large eu-btn" href="/eu">Europe</a></li>
-        </ul>
-    </div>
-</section>
+{% include cta_reminder_section.html cta="Reserve your spot today!" buttons=page.hero_buttons %}
 
 <section class="about-logistics faqs">
     <div class="content">
@@ -317,11 +314,8 @@ custom_class: eu-landing
     </div>
   </div>
 </section>
-<footer>
-    <div class="content">
-        <img class="footer-logo" src="{{ '/img/mlh_hackcon.svg' | prepend: site.baseurl }}">
-        <h5 class="copyright">&copy Major League Hacking 2016</h5>
-    </div>
-</footer>
+
+{% include footer.html %}
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript" src="{{ '/js/script.js' | prepend: site.baseurl }}"></script>

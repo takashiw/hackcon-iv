@@ -1,3 +1,23 @@
+.hero {
+  &.na {
+    background-image: url('../img/hero/hero-na.jpg');
+
+    .button.large.register {
+      background: #C52E02;
+    }
+  }
+}
+
+.na-landing {
+  .speakers{
+    display: none;
+  }
+
+  .schedule {
+    display: none;
+  }
+}
+
 .about-logistics {
   padding: 3rem 0;
   text-align: left;
@@ -6,7 +26,6 @@
     h2 {
       margin-bottom: 25px;
       text-align: center;
-      
     }
 
     p { 
