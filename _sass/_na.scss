@@ -8,16 +8,6 @@
   }
 }
 
-.na-landing {
-  .speakers{
-    display: none;
-  }
-
-  .schedule {
-    display: none;
-  }
-}
-
 .about-logistics {
   padding: 3rem 0;
   text-align: left;
@@ -67,7 +57,6 @@
     padding: 10px 0px 10px 20px;
   }
 
-  
   @include media-query($phone-landscape) {
     .content {
       text-align: center;
