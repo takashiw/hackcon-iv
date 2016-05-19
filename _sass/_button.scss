@@ -13,4 +13,23 @@
     width: 11rem;
     max-width: 80%;
   }
+
+  &.close {
+    background: $medium-gray;
+    margin-top: 2rem;
+  }
+
+  &.red {
+    background: #C52E02;
+  }
+}
+
+.button-list {
+  li {
+    display: inline;
+
+    .button {
+      margin: 0.25rem;
+    }
+  }
 }

@@ -1,0 +1,15 @@
+<section class="hero {{ include.class }}" id="top">
+  <div class="content">
+    <img class="hero-logo" src="{{ include.logo | prepend: site.baseurl }}">
+    {% if include.partner_logo and include.partner_url %}
+      <br /><a href="{{ include.partner_url }}" target="_blank"><img class="hero-hosted" src="{{ include.partner_logo | prepend: site.baseurl }}"></a><br />
+    {% endif %}
+    <h1>{{ include.cta }}</h1>
+    <p class="details">{{ include.details }}</p>
+    <ul class="button-list">
+      {% for button in include.buttons %}
+        <li><a class="button large {{ button.class }}" href="{{ button.link }}">{{ button.text }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

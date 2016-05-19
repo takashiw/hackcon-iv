@@ -1,0 +1,7 @@
+<section class="image-grid">
+  <ul class="images">
+    {% for image in include.images %}
+      <li><img src="{{ image | prepend: site.baseurl }}"></li>
+    {% endfor %}
+  </ul>
+</section>
