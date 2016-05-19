@@ -1,123 +1,117 @@
 ---
 layout: default
+custom_class: home
+hero:
+  details: "<span class='date'>June 24 &mdash; 26 </span> <span class='divider'>|</span> <span class='location'>Estes Park, Colorado </span>"
+  buttons:
+    - text: "Info"
+      link: "/na"
+    - text: "Register"
+      class: "red"
+      link: "https://ti.to/mlh/hackcon-iv"
+image_list:
+  - "/img/home/picture1.jpg"
+  - "/img/home/picture2.jpg"
+  - "/img/home/picture3.jpg"
+  - "/img/home/picture4.jpg"
+cta_reminder:
+  cta: "Reserve your spot today!"
 ---
 {% include navbar.html %}
-<section class="hero" id="top">
-    <div class="content">
-        <img class="hero-logo" src="{{ '/img/h4_logo.png' | prepend: site.baseurl }}">
-        <br /><a href="http://education.github.com" target="_blank"><img class="hero-hosted" src="{{ '/img/hosted-github.png' | prepend: site.baseurl }}"></a><br />
-        <h1>Welcome to the hackathon organizer community.</h1>
-        <p class="details"><span class="date" style="width:auto;">June 24 &mdash; 26 </span> <span class="divider">|</span> <span class="location">Estes Park, Colorado </span></p>
-        <a class="button large register" href="https://ti.to/mlh/hackcon-iv">Register</a>
-    </div>
-</section>
-<section class="about" id="info">
-    <div class="content">
-        <h2>What is Hackcon?</h2>
-        <p>Hackcon is the official hackathon organizers' conference. It's an opportunity to meet the community, learn from one another, and to tackle the issues that we are facing together.  With two full days of workshops, talks, and discussion sessions, new organizers can learn best practices for running a hackathon, and veteran organizers will share their experiences and help guide the next generation.</p>
-        <br />
-        <p>Join us in Estes Park, Colorado for two days of teaching, learning, and community building on a beautiful campground. We'll see you in the mountains!</p>
-        <br />
-        <p><a class="button large register" href="/logistics">View Details</a></p>
-    </div>
-</section>
-<section class="boulder">
 
+{% include hero.html
+  class="home"
+  logo="/img/logos/mlh-hackcon-logo.svg"
+  partner_logo="/img/sponsors/hosted-github.png"
+  partner_url="http://education.github.com"
+  cta="Welcome to the hackathon organizer community."
+  details=page.hero.details
+  buttons=page.hero.buttons
+%}
+
+<section class="hackcon-info" id="info">
+  <div class="content">
+    <h2>What is Hackcon?</h2>
+    <p>Hackcon is the official hackathon organizers' conference. It's an opportunity to meet the community, learn from one another, and to tackle the issues that we are facing together.  With two full days of workshops, talks, and discussion sessions, new organizers can learn best practices for running a hackathon, and veteran organizers will share their experiences and help guide the next generation.</p>
+    <br />
+    <p>Join us in Estes Park, Colorado for two days of teaching, learning, and community building on a beautiful campground. We'll see you in the mountains!</p>
+    <br />
+    <p><a class="button large register" href="/logistics">View Details</a></p>
+  </div>
 </section>
-<section class="about location">
-    <div class="content">
-        <h2>What will I learn at Hackcon?</h2>
-        <p>Hackcon features talks, workshops, discussions, and activities with Hacker community experts.  You'll learn a lot whether this is your first hackathon or you've been organizing hackathons since the beginning!</p>
 
-        <div class="video-wrapper">
-          <iframe width="640" height="360" src="https://www.youtube.com/embed/vHEBrFdAJvk?list=PLPDgudJ_VDUfQcMWbEgEsJS270FvfNGFG" frameborder="0" allowfullscreen></iframe>
-        </div>
+<section class="hackcon-info">
+  <div class="content">
+    <h2>What will I learn at Hackcon?</h2>
+    <p>Hackcon features talks, workshops, discussions, and activities with Hacker community experts.  You'll learn a lot whether this is your first hackathon or you've been organizing hackathons since the beginning!</p>
 
-        <h3>Like what you're hearing?</h3>
-        <p>Check out the videos from the previous Hackcons here:</p>
-        <a class="button large" href="https://www.youtube.com/playlist?list=PLPDgudJ_VDUdqhQldG7SqXGxaj-FiLGmP">Hackcon I</a> <a class="button large" href="https://www.youtube.com/playlist?list=PLPDgudJ_VDUfQcMWbEgEsJS270FvfNGFG">Hackcon II</a> <a class="button large" href="https://www.youtube.com/playlist?list=PLPDgudJ_VDUfW7HyctqGMKmhLHAwAZLIS">Hackcon III</a> <a class="button large" href="https://www.youtube.com/playlist?list=PLPDgudJ_VDUeTUV4ytl4WC4RTFZsZxJVB">Hackcon EU</a></p><br />
+    <div class="video-wrapper">
+      <iframe width="640" height="360" src="https://www.youtube.com/embed/vHEBrFdAJvk?list=PLPDgudJ_VDUfQcMWbEgEsJS270FvfNGFG" frameborder="0" allowfullscreen></iframe>
     </div>
-</section>
-<section class="image-grid">
-    <ul class="images">
-        <li><img src="{{ '/img/picture1.jpg' | prepend: site.baseurl }}"></li>
-        <li><img src="{{ '/img/picture2.jpg' | prepend: site.baseurl }}"></li>
-        <li><img src="{{ '/img/picture3.jpg' | prepend: site.baseurl }}"></li>
-        <li><img src="{{ '/img/picture4.jpg' | prepend: site.baseurl }}"></li>
+
+    <h3>Like what you're hearing?</h3>
+    <p>Check out the videos from the previous Hackcons here:</p>
+    <ul class="button-list">
+      <li><a class="button large" href="https://www.youtube.com/playlist?list=PLPDgudJ_VDUdqhQldG7SqXGxaj-FiLGmP">Hackcon I</a></li>
+      <li><a class="button large" href="https://www.youtube.com/playlist?list=PLPDgudJ_VDUfQcMWbEgEsJS270FvfNGFG">Hackcon II</a></li>
+      <li><a class="button large" href="https://www.youtube.com/playlist?list=PLPDgudJ_VDUfW7HyctqGMKmhLHAwAZLIS">Hackcon III</a></li>
+      <li><a class="button large" href="https://www.youtube.com/playlist?list=PLPDgudJ_VDUeTUV4ytl4WC4RTFZsZxJVB">Hackcon EU</a></li>
     </ul>
+  </div>
 </section>
-<section class="testimonials">
-    <div class="content">
-        <h2>Organizers Love Hackcon</h2>
-        <ul class="cards">
-            <li>
-                <div class="card">
-                    <p>"One of the most powerful impressions that persisted after my first Hackcon was a feeling of community. At Hackcon III, I was surrounded by organizers, whom I bonded with over a shared passion of painting a profound experience for hackathon enthusiasts. I left with a frantic desire to take what I learned to improve HackHolyoke and help build a community around hackers, which led me to becoming a part of the Hackcon IV organizing team."</p>
-                    <div class="person">
-                        <img src="{{ '/img/thao.png' | prepend: site.baseurl }}">
-                        <div class="text">
-                            <h5>Thao Bach</h5>
-                            <h6>HackHolyoke + Hackcon IV Organizer</h6>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="card">
-                    <p>"Hackcon is the reason I started organising my first hackathon. The sense of community between hackathon organisers that is demonstrated at Hackcon made me feel really comfortable about organising an event, as I felt I could ask anyone about their own experiences. Additionally, the incredible lineup of speakers left me with ample knowledge to start up my first hackathon."</p>
-                    <div class="person">
-                        <img src="{{ '/img/james.jpg' | prepend: site.baseurl }}">
-                        <div class="text">
-                            <h5>James Brooks</h5>
-                            <h6>Hack the Holidays Lead Organizer</h6>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="card">
-                    <p>"Hackcon gave me invaluable insights on what should and should not be happening in the process of starting up a hackathon.  I also found the experience of building community to be one of the most important parts of the whole hackathon scene, and Hackcon allowed me to feel comfortable meeting and developing relationships with people. I did not feel ostracized or uncomfortable being around so many people in the industry - I felt safe being who I was, something I don't normally feel at other similar events."</p>
-                    <div class="person">
-                        <img src="{{ '/img/selynna.png' | prepend: site.baseurl }}">
-                        <div class="text">
-                            <h5>Selynna Sun</h5>
-                            <h6>Los Altos Hacks Sponsorship Director</h6>
-                        </div>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
-</section>
-<section class="about sign-up" id="sign-up">
-    <h2>Reserve your spot today!</h2>
-    <div class="content">
-        <a class="button large register" href="https://ti.to/mlh/hackcon-iv">Register</a>
-    </div>
-</section>
-<section class="sponsors">
-    <div class="content">
-      <h2>Special Thanks to Our Sponsors</h2>
-      
-      <div class="github_section">
-          <h4>Presenting Partner</h4>
-          <a href="http://github.com"><img src="{{ '/img/github.svg' | prepend: site.baseurl }}"></a>
-      </div>
 
-      <div class="event_section">
-        <h4 class="event_sponsors">Event Sponsors</h4>
-        <ul class="items">
-            <li><a href="http://kpcb.com"><img class="kpcb" src="{{ '/img/kpcb.svg' | prepend: site.baseurl }}"></a></li>
-            <li><a href="http://brandmakers.com/"><img class="brandmakers" src="{{ '/img/brandmakers.svg' | prepend: site.baseurl }}"></a></li>
-        </ul>
-      </div> 
+{% include image_list.html images=page.image_list %}
+
+<section class="testimonials">
+<div class="content">
+  <h2>Organizers Love Hackcon</h2>
+  <ul class="cards">
+    <li>
+    <div class="card">
+      <p>"One of the most powerful impressions that persisted after my first Hackcon was a feeling of community. At Hackcon III, I was surrounded by organizers, whom I bonded with over a shared passion of painting a profound experience for hackathon enthusiasts. I left with a frantic desire to take what I learned to improve HackHolyoke and help build a community around hackers, which led me to becoming a part of the Hackcon IV organizing team."</p>
+      <div class="person">
+        <img src="{{ '/img/home/testimonials/thao.png' | prepend: site.baseurl }}">
+        <div class="text">
+          <h5>Thao Bach</h5>
+          <h6>HackHolyoke + Hackcon IV Organizer</h6>
+        </div>
+      </div>
     </div>
+    </li>
+    <li>
+    <div class="card">
+      <p>"Hackcon is the reason I started organising my first hackathon. The sense of community between hackathon organisers that is demonstrated at Hackcon made me feel really comfortable about organising an event, as I felt I could ask anyone about their own experiences. Additionally, the incredible lineup of speakers left me with ample knowledge to start up my first hackathon."</p>
+      <div class="person">
+        <img src="{{ '/img/home/testimonials/james.jpg' | prepend: site.baseurl }}">
+        <div class="text">
+          <h5>James Brooks</h5>
+          <h6>Hack the Holidays Lead Organizer</h6>
+        </div>
+      </div>
+    </div>
+    </li>
+    <li>
+    <div class="card">
+      <p>"Hackcon gave me invaluable insights on what should and should not be happening in the process of starting up a hackathon.  I also found the experience of building community to be one of the most important parts of the whole hackathon scene, and Hackcon allowed me to feel comfortable meeting and developing relationships with people. I did not feel ostracized or uncomfortable being around so many people in the industry - I felt safe being who I was, something I don't normally feel at other similar events."</p>
+      <div class="person">
+        <img src="{{ '/img/home/testimonials/selynna.png' | prepend: site.baseurl }}">
+        <div class="text">
+          <h5>Selynna Sun</h5>
+          <h6>Los Altos Hacks Sponsorship Director</h6>
+        </div>
+      </div>
+    </div>
+    </li>
+  </ul>
+</div>
 </section>
-<footer>
-    <div class="content">
-        <img class="footer-logo" src="{{ '/img/header_logo.png' | prepend: site.baseurl }}">
-        <h5 class="copyright">&copy; Major League Hacking 2016</h5>
-    </div>
-</footer>
+
+{% include events/cta_reminder.html
+  cta=page.cta_reminder.cta
+  buttons=page.hero.buttons
+%}
+
+{% include footer.html %}
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript" src="{{ '/js/script.js' | prepend: site.baseurl }}"></script>

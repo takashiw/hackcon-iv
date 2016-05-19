@@ -1,0 +1,44 @@
+.speak, .home {
+  .hackcon-info {
+    padding: 3rem 0;
+    text-align: center;
+
+    .content {
+      max-width: 40rem;
+    }
+
+    .video-wrapper {
+      height: 0;
+      margin: 20px 0;
+      padding-bottom: 56.25%; /* 16:9 */
+      padding-top: 25px;
+      position: relative;
+    }
+
+    .video-wrapper iframe {
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  .timeline {
+    li {
+      list-style-type: none;
+      padding-bottom: 15px;
+
+      strong {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@include media-query($phone-landscape) {
+  .speak, .home {
+    .hackcon-info .video-wrapper {
+      padding-bottom: 100%;
+    }
+  }
+}

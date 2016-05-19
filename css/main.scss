@@ -51,8 +51,6 @@ $xxl-desktop:      10000px;
     }
 }
 
-
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "lib/reset.min",
@@ -63,13 +61,12 @@ $xxl-desktop:      10000px;
         "button",
         "navbar",
         "hero",
-        "about",
-        "location",
-        "logistics",
         "image-grid",
         "testimonials",
-        "sign-up",
+        "cta_reminder",
         "footer",
-        "timeline",
-        "sponsors"
+        "sponsors",
+        "event_page",
+        "na",
+        "speak"
 ;
