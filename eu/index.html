@@ -1,0 +1,72 @@
+---
+layout: default
+custom_class: event eu
+event:
+  name: "Hackcon EU"
+  logo: "/img/logos/mlh-hackcon-eu-logo.png"
+  partner:
+    logo: "/img/sponsors/hosted-github.png"
+    url: "http://education.github.com"
+hero:
+  buttons:
+   - text: "Register"
+     class: "register"
+     link: "https://ti.to/mlh/mlh-hackcon-eu-2016"
+  cta: "Joining us at Hackcon? Here's your survival guide!"
+  details: "<span class='date'>Sept. 2 &mdash; 4 </span> <span class='divider'>|</span> <span class='location'>Eindhoven, Netherlands</span>"
+image_list:
+  - "/img/logistics/hackcon-eu-1.jpg"
+  - "/img/logistics/hackcon-eu-2.jpg"
+  - "/img/logistics/hackcon-eu-3.jpg"
+  - "/img/logistics/hackcon-eu-4.jpg"
+cta_reminder:
+  cta: "Register for Hackcon EU!"
+  buttons:
+   - text: "Register"
+     class: "register"
+     link: "https://ti.to/mlh/mlh-hackcon-eu-2016"
+---
+
+{% include navbar.html %}
+
+{% include hero.html
+  logo=page.event.logo
+  partner_logo=page.event.partner.logo
+  partner_url=page.event.partner.url
+  cta=page.hero.cta
+  details=page.hero.details
+  buttons=page.hero.buttons
+%}
+
+{% include_relative _logistics.html %}
+
+{% include image_list.html images=page.image_list %}
+
+<section class="sponsors" id="sponsors">
+  <div class="content">
+    <h2>Special Thanks to Our Sponsors</h2>
+
+    <div class="github_section">
+      <h4>Presenting Partner</h4>
+      <a href="http://github.com"><img src="{{ '/img/sponsors/github.svg' | prepend: site.baseurl }}"></a>
+    </div>
+
+    <div class="grid">
+      <h4 class="event_sponsors">Host Venue</h4>
+      <a href="http://www.hightechcampus.com/"><img class="high-tech-campus" src="{{ '/img/sponsors/high-tech-campus.png' | prepend: site.baseurl }}"></a>
+    </div>
+
+  </div>
+</section>
+
+{% include events/cta_reminder.html
+  cta=page.cta_reminder.cta
+  buttons=page.cta_reminder.buttons
+%}
+
+{% include_relative _faq.html %}
+
+{% include footer.html %}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="{{ '/js/script.js' | prepend: site.baseurl }}"></script>
