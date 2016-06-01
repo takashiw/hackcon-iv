@@ -1,8 +1,8 @@
 # Site settings
-title: Hackcon IV
+title: MLH Hackcon
 description: >
   Hackcon is the hackathon orgnaizers' conference.
-url: "http://hackcon.io" # the base hostname & protocol for your site
+url: "http://hackcon.io"
 twitter_username: mlhacks
 github_username:  mlh
 
