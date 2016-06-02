@@ -13,15 +13,15 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="icon" href="{{ '/img/favicon.png' | prepend: site.baseurl }}">
 
-  <meta property="og:site_name" content="Hackcon">
-  <meta property="og:title" content="MLH | Hackcon IV">
-  <meta property="og:description" content="Hackcon is the official hackathon organizers' conference. Join us in Estes Park, Colorado this June and meet the community behind the student hackathon movement!">
+  <meta property="og:site_name" content="MLH Hackcon">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt }}{% else %}{{ site.description }}{% endif %}">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="http://hackcon.io/img/hackcon-facebook.jpg">
+  <meta property="og:image" content="{% if page.facebook_image %}{{ page.facebook_image | prepend: site.url }}{% else %}{{ '/img/facebook/default.jpg' | prepend: site.url }}{% endif %}">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:url" content="http://hackcon.io/">
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -43,8 +43,6 @@
     fbq('init', '261635320842380');
     fbq('track', "PageView");
   </script>
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=261635320842380&ev=PageView&noscript=1"
-  /></noscript>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=261635320842380&ev=PageView&noscript=1" /></noscript>
   <!-- End Facebook Pixel Code -->
 </head>

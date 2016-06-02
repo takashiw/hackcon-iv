@@ -1,6 +1,21 @@
 $nav-padding: 0.5rem;
 $nav-height: 3rem;
 
+.mobile-nav, .mobile-nav-trigger, label[for="mobile-nav-trigger"] {
+  display: none;
+}
+
+.site-wrap {
+  background-color: #fff;
+  bottom: 100%;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+  top: 0;
+  z-index: 1;
+}
+
 nav {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -10,20 +25,21 @@ nav {
   left: 0;
   right: 0;
   color: $white;
-  padding-top: 20px;
 
   .nav-logo {
     height: ($nav-height - $nav-padding / 2 - 0.25rem);
     position: absolute;
     left: 0;
-    top: $nav-padding;
+    top: $nav-padding / 2;
     padding: 0.5rem 0;
+    z-index: 3;
   }
 
   .links {
     position: absolute;
     right: 0;
     top: $nav-padding;
+    z-index: 3;
 
     a {
       @extend %h4;
@@ -41,17 +57,67 @@ nav {
   }
 }
 
-@include media-query($phone-landscape) {
+@media screen and (max-width: $tablet-portrait) {
+  .mobile-nav-trigger {
+    clip: rect(0, 0, 0, 0);
+    display: block !important;
+    position: absolute;
+  }
+
+  .mobile-nav {
+    color: $black;
+    margin-top: $nav-height;
+
+    li {
+      height: $nav-height;
+      padding: 0;
+
+      a {
+        display: block;
+        font-size: $nav-height / 2;
+        line-height: $nav-height / 2;
+        padding: $nav-height / 4;
+      }
+
+      &:hover {
+        background: $light-gray;
+      }
+
+    }
+  }
+
+  label[for="mobile-nav-trigger"] {
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect fill='#FFFFFF' width='30' height='5'/><rect fill='#FFFFFF' y='24' width='30' height='5'/><rect fill='#FFFFFF' y='12' width='30' height='5'/></svg>");
+    background-size: contain;
+    display: block !important;
+    right: 1rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 0.75rem;
+    z-index: 2;
+    width: 1.5rem;
+  }
+
+  .mobile-nav-trigger:checked ~ .mobile-nav {
+    display: block !important;
+  }
+
+  .mobile-nav-trigger:checked ~ .primary-nav {
+    background: $gray;
+  }
+
+  .mobile-nav-trigger:checked ~ .site-wrap {
+    top: $nav-height * 5;
+  }
+
+  .mobile-nav-trigger + label, .site-wrap {
+    transition: top 0.2s;
+  }
 
   nav {
-    .nav-logo {
-      padding: 0.75rem 0;
-    } 
-
-    .links a {
-      font-size: 0.875rem;
+    .links {
+      display: none !important;
     }
-
-
   }
 }
