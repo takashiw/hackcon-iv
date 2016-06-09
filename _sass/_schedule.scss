@@ -11,6 +11,19 @@
     margin-top: 2rem;
     overflow: hidden;
 
+    p.shuttle_times {
+      clear: both;
+      color: #8C8C8C;
+      float: none;
+      text-align: center;
+
+      span {
+        font-size: 20px;
+        font-weight: bold;
+        display: block;
+      }
+    }
+
     .day {
       float: left;
       padding: 1.5rem;
