@@ -50,16 +50,10 @@ schedule:
         description: "John Britton"
       -
         time: "18:10"
-        title: "End of Day Sessions"
-      -
-        time: "18:10"
         title: "Snack"
       -
         time: "20:30"
         title: "Dinner, Icebreakers & S'mores"
-      -
-        time: "22:30"
-        title: "End of Evening Sessions"
   -
     title: "Saturday (Day 2)"
     items:
@@ -135,41 +129,9 @@ schedule:
         title: "Keynote"
         description: "Evan Korth"
       -
-        time: "15:22"
-        title: "Lighting Talk"
-        description: "Anthony Castrio"
-      -
-        time: "15:32"
-        title: "Lighting Talk: Hacking Food Lines"
-        description: "Dawson Botsford"
-      -
-        time: "15:42"
-        title: "Lighting Talk"
-        description: "Thao Bach"
-      -
-        time: "13:52"
-        title: "Welcome from Devpost"
-        description: "Richard Murby"
-      -
-        time: "15:55"
-        title: "Lighting Talk"
-        description: "Ron Boger"
-      -
-        time: "16:05"
-        title: "Lighting Talk: Navigating your Campus Bureaucracy"
-        description: "Niko Lazaris"
-      -
-        time: "16:15"
-        title: "Lighting Talk"
-        description: "Rachell Conolly"
-      -
-        time: "16:25"
-        title: "Welcome from a16z"
-        description: "TBC"
-      -
-        time: "16:28"
-        title: "Lighting Talk"
-        description: "Eddie Zaneski"
+        time: "15:22 - 16:38"
+        title: "Lighting Talks"
+        description: "Anthony Castrio, Dawson Botsford, Thao Bach, Ron Boger, Niko Lazaris, Rachell Conolly, Eddie Zaneski"
       -
         time: "16:38"
         title: "Break"
@@ -177,17 +139,11 @@ schedule:
         time: "17:10"
         title: "Barcamp Discussions"
       -
-        time: "18:15"
-        title: "End of Day Sessions"
-      -
         time: "18:30"
         title: "Dinner"
       -
         time: "20:00"
         title: "Camp Games & Evening Activities"
-      -
-        time: "22:30"
-        title: "End of Evening Sessions"
   -
     title: "Sunday (Day 3)"
     items:
@@ -312,9 +268,7 @@ schedule:
   </div>
 </section>
 
-{% include schedule.html
-  schedule=page.schedule
-%}
+{% include schedule.html schedule=page.schedule %}
 
 <section class="sponsors" id="sponsors">
   <div class="content">
