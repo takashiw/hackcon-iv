@@ -4,13 +4,13 @@
 
   h2 {
     color: #fff;
-    text-align: center;  
+    text-align: center;
   }
 
   .timeline_wrap {
     margin-top: 2rem;
     overflow: hidden;
-    
+
     .day {
       float: left;
       padding: 1.5rem;
@@ -24,27 +24,36 @@
       }
 
       li {
-        margin-bottom: 1.2rem;
+        margin-bottom: 0.5rem;
       }
     }
 
     .time_block {
       color: #DEDE80;
-      float: right; 
+      float: right;
+      font-size: 0.875rem;
+      line-height: 1.125rem;
+      padding-left: 0.5rem;
+      text-align: right;
     }
 
     .block_title {
       color: #fff;
-      font-size: 1.5rem;
+      font-size: 1rem;
+      line-height: 1.125rem;
+      text-align: left;
     }
 
     .block_description {
       color: #8C8C8C;
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+      text-align: left;
     }
   }
 }
 
-@include media-query($phone-landscape) {
+@include media-query($tablet-portrait) {
   .schedule {
     .timeline_wrap {
       .day {
@@ -52,6 +61,5 @@
         width: 100%;
       }
     }
-    
   }
 }
