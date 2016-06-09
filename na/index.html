@@ -29,6 +29,181 @@ cta_reminder:
    - text: "Register"
      class: "register"
      link: "https://ti.to/mlh/hackcon-iv"
+schedule:
+  -
+    title: "Friday (Day 1)"
+    items:
+      -
+        time: "11:00"
+        title: "Registration Opens"
+      -
+        time: "17:00"
+        title: "Opening Talks"
+        description: "Mike Swift"
+      -
+        time: "17:45"
+        title: "Welcome from Microsoft"
+        description: "Joe Shirey"
+      -
+        time: "17:50"
+        title: "Welcome from GitHub"
+        description: "John Britton"
+      -
+        time: "18:10"
+        title: "Snack"
+      -
+        time: "20:30"
+        title: "Dinner, Icebreakers & S'mores"
+  -
+    title: "Saturday (Day 2)"
+    items:
+      -
+        time: "07:00-09:00"
+        title: "Breakfast"
+      -
+        time: "09:30"
+        title: "Discussion Sessions"
+        description: "Gene Chorba, Caeley Looney, Alice Ma, Michelle Chen"
+      -
+        time: "10:00"
+        title: "Room Change Break"
+      -
+        time: "10:05"
+        title: "Discussion Sessions"
+        description: "Amritha Jayanti, Kevin Lewis & Michelle Chen"
+      -
+        time: "10:30"
+        title: "Break"
+      -
+        time: "10:50"
+        title: "Keynote"
+        description: "Mike Swift"
+      -
+        time: "11:35"
+        title: "Keynote"
+        description: "Brandon Keepers"
+      -
+        time: "12:05"
+        title: "Welcome from KPCB"
+        description: "Justin Sayarath"
+      -
+        time: "12:10"
+        title: "Break"
+      -
+        time: "12:32"
+        title: "Keynote"
+        description: "Chloe Varelidi"
+      -
+        time: "13:02"
+        title: "Talk"
+        description: "Matt O'Haga, Takashi Wickes, Bernard Marger"
+      -
+        time: "13:17"
+        title: "Welcome from Brandmakers"
+        description: "Evan MacBride"
+      -
+        time: "13:20"
+        title: "Talk: Managing Chaos"
+        description: "Joshua Simpson"
+      -
+        time: "13:45"
+        title: "Lunch"
+      -
+        time: "14:52"
+        title: "Keynote"
+        description: "Evan Korth"
+      -
+        time: "15:22 - 16:38"
+        title: "Lighting Talks"
+        description: "Anthony Castrio, Dawson Botsford, Thao Bach, Ron Boger, Niko Lazaris, Rachell Conolly, Eddie Zaneski"
+      -
+        time: "16:38"
+        title: "Break"
+      -
+        time: "17:10"
+        title: "Barcamp Discussions"
+      -
+        time: "18:30"
+        title: "Dinner"
+      -
+        time: "20:00"
+        title: "Camp Games & Evening Activities"
+  -
+    title: "Sunday (Day 3)"
+    items:
+      -
+        time: "07:00-09:00"
+        title: "Breakfast"
+      -
+        time: "10:00"
+        title: "Talk: MLH Hacker Survey Results"
+        description: "Tim Fogarty"
+      -
+        time: "10:30"
+        title: "Workshop: Sponsorship"
+        description: "Jonathan Gottfried"
+      -
+        time: "10:30"
+        title: "Workshop"
+        description: "Anish Athalye"
+      -
+        time: "10:30"
+        title: "Workshop: Community Building"
+        description: "Carol Smith"
+      -
+        time: "10:30"
+        title: "LARPing"
+        description: "Nick Quinlan, Li Chen, Tim Fogarty"
+      -
+        time: "11:15"
+        title: "Break"
+      -
+        time: "11:25"
+        title: "Workshop"
+        description: "Raymond Xu"
+      -
+        time: "11:25"
+        title: "Workshop"
+        description: "Advitheey Chelikani, Robert Eng"
+      -
+        time: "11:25"
+        title: "Workshop: Microsoft"
+        description: "Randy Guthrie, Annie Bubinski, Yesenia Alvarez"
+      -
+        time: "11:25"
+        title: "LARPing"
+        description: "Nick Quinlan, Li Chen, Tim Fogarty"
+      -
+        time: "12:10"
+        title: "Break"
+      -
+        time: "12:30"
+        title: "Workshop"
+        description: "Gemma Busoni"
+      -
+        time: "12:30"
+        title: "Workshop: Hardware at Hackathons"
+        description: "Shy Ruparel"
+      -
+        time: "12:30"
+        title: "Workshop: Devpost"
+        description: "Richard Murby"
+      -
+        time: "12:30"
+        title: "LARPing"
+        description: "Nick Quinlan, Li Chen, Tim Fogarty"
+      -
+        time: "13:15"
+        title: "Lunch"
+      -
+        time: "14:00"
+        title: "Closing Session"
+      -
+        time: "14:30"
+        title: "End of Hackcon IV"
+      -
+        time: "15:00"
+        title: "Departures"
 ---
 
 {% include hero.html
@@ -76,6 +251,8 @@ cta_reminder:
     </ul>
   </div>
 </section>
+
+{% include schedule.html schedule=page.schedule %}
 
 <section class="sponsors" id="sponsors">
   <div class="content">
