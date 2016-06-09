@@ -1,0 +1,23 @@
+<section class="schedule">
+  <div class="content">
+    <h2>Schedule</h2>
+    <div class="timeline_wrap">
+
+    {% for day in page.schedule %}
+      <div class="day">
+        <h3>{{ day.title }}</h3>
+        <ul>
+        {% for item in day.items %}
+          <li>
+            <span class="time_block">{{ item.time }}</span>
+            <h5 class="block_title">{{ item.title }}</h5>
+            <p class="block_description">{{ item.description }}</p>
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+
+    </div>
+  </div>
+</section>
